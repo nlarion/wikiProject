@@ -10,3 +10,15 @@ body {
   margin: 5px;
   padding: 2px;
 }
+
+.codeBox{
+  background-color: black;
+  color: #78f503;
+  border-radius: 5px;
+  border: 3px solid gray;
+}
+
+.rendered {
+  border-left: 5px solid #ddd;
+  margin-left: 18px;
+}

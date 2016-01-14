@@ -29,8 +29,8 @@
       <h1>Hello, world!</h1>
 
       <div class="row">
-        <div class="col-sm-3 box">
-          <h4>Makrdown</h4>
+        <div data-toggle="modal" data-target="#markdown" class="col-sm-3 box">
+          <h4 >Makrdown</h4>
         </div>
         <div class="col-sm-3 box">
           <h4>Block Elements</h4>
@@ -121,6 +121,49 @@
         </div>
       </div>
 
+    </div> <!-- Container End -->
+
+        <!-- Modals and hidden elements -->
+    <div class="modal fade" id="markdown" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Markdown</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name.
+            </p>
+            <p>
+              Below is a code example of how to write basic markdown headers:
+            </p>
+            <div class="codeBox">
+              # Best Chocolate Chip Cookies <br>
+              ## Best Chocolate Chip Cookies <br>
+              ### Best Chocolate Chip Cookies <br>
+              #### Best Chocolate Chip Cookies <br>
+              ##### Best Chocolate Chip Cookies <br>
+              ###### Best Chocolate Chip Cookies <br>
+            </div>
+          </div>
+          <p>
+            This is how above code would be rendered:
+          </p>
+          <blockquote class="rendered">
+            <h1>Best Chocolate Chip Cookies</h1>
+            <h2>Best Chocolate Chip Cookies</h2>
+            <h3>Best Chocolate Chip Cookies</h3>
+            <h4>Best Chocolate Chip Cookies</h4>
+            <h5>Best Chocolate Chip Cookies</h5>
+            <h6>Best Chocolate Chip Cookies</h6>
+          </blockquote>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
     </div>
 
 
