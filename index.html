@@ -37,7 +37,7 @@
             <h4>Block Elements</h4>
           </div>
         </a>
-        <div class="col-sm-3 box">
+        <div data-toggle="modal" data-target="#inlineElements"class="col-sm-3 box">
           <h4>Inline Elements</h4>
         </div>
       </div>
@@ -163,6 +163,46 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="inlineElements" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Inline Elements</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              HTML (Hypertext Markup Language) elements are usually "inline" elements or "block-level" elements. An inline element occupies only the space bounded by the tags that define the inline element. The following example demonstrates the inline element's influence:
+            </p>
+            <p>
+              Below is a code example of how to make an Inline Element:
+            </p>
+            <h3>HTML</h3>
+            <div class="codeBox">
+              &lt;p&gt;This &lt;span&gt;span&lt;/span&gt; is an inline element; its background has been colored to display both the beginning and end of the inline element's influence&lt;/p&gt;
+            </div>
+            <h3>CSS</h3>
+            <div class="codeBox">
+              <p>
+                span { background-color: #8ABB55; }
+              </p>
+            </div>
+          </div>
+          <p>
+            This is how above code would be rendered:
+          </p>
+          <blockquote class="rendered">
+            <p>
+              This <span class="greenBox">span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element's influence
+            </p>
+          </blockquote>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
