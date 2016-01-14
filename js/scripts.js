@@ -31,6 +31,8 @@ $(document).ready(function() {
     }
   });
 
+
+
   $("#functions").click(function(){
     if($(".functions").css("display") === "none") {
       $(".functions").show();
@@ -44,6 +46,22 @@ $(document).ready(function() {
       $(".dom").show();
     }else {
       $(".dom").hide();
+    }
+  });
+
+  $("#arraysBox").click(function(){
+    if($(".arraysBox").css("display") === "none") {
+      $(".arraysBox").show();
+    }else {
+      $(".arraysBox").hide();
+    }
+  });
+
+  $("#loopingBox").click(function(){
+    if($(".loopingBox").css("display") === "none") {
+      $(".loopingBox").show();
+    }else {
+      $(".loopingBox").hide();
     }
   });
 
