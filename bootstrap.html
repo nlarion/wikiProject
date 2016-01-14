@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#mainMenu").click(function(){
+          window.location.href = "index.html";
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+     <div class="row">
+      <div id="mainMenu" class="col-sm-3">
+        <h1>Main Menu</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="box">
+      <h3>Bootstrap</h3>
+      <p>
+        Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+      </p>
+      <h4>Below is sample Bootstrap code</h4>
+      <div class="codeBox">
+        &lt;a class="btn btn-default" href="#" role="button"&gt;Link&lt;/a&gt;<br>
+        &lt;button class="btn btn-default" type="submit"&gt;Button&lt;/button&gt;<br>
+        &lt;input class="btn btn-default" type="button" value="Input"&gt;<br>
+        &lt;input class="btn btn-default" type="submit" value="Submit"&gt;<br>
+      </div>
+      <h4>Below is how the code would render</h4>
+      <div class="rendered">
+        <a class="btn btn-default" href="#" role="button">Link</a>
+        <button class="btn btn-default" type="submit">Button</button>
+        <input class="btn btn-default" type="button" value="Input">
+        <input class="btn btn-default" type="submit" value="Submit">
+      </div>
+      <div class="center">
+        <a href="http://getbootstrap.com/" target="_blank" class="btn btn-outline-inverse btn-lg" >Learn More About Bootstrap</a>
+      </div>
+
+
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
