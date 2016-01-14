@@ -35,16 +35,20 @@ a {
   background-color: #8ABB55;
 }
 
-#mainMenu:hover {
-  cursor: pointer;
-  text-decoration: underline;
-
-}
-
-.line{
+.line {
   background-color: #FFFFFF;
   border: 1px solid #000000;
   height: 1px;
   margin: 10px 0;
   width: 100%;
+}
+
+.css {
+  display: none;
+}
+
+#mainMenu:hover {
+  cursor: pointer;
+  text-decoration: underline;
+
 }
