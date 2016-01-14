@@ -43,7 +43,7 @@ a {
   width: 100%;
 }
 
-.css {
+.css, .divsAndSpans, .arithmetic, .gridSystem, .functions, .dom, .arraysBox, .loopingBox {
   display: none;
 }
 .btn-outline-inverse {
