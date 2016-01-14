@@ -17,12 +17,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="container">
@@ -339,23 +333,30 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Inline Elements</h4>
+            <h4 class="modal-title" id="myModalLabel">Floats</h4>
           </div>
           <div class="modal-body">
             <p>
-              HTML (Hypertext Markup Language) elements are usually "inline" elements or "block-level" elements. An inline element occupies only the space bounded by the tags that define the inline element. The following example demonstrates the inline element's influence:
+              The float property specifies whether or not a box (an element) should float.
             </p>
             <p>
-              Below is a code example of how to make an Inline Element:
+              Below is a code example of how to make an element float:
             </p>
             <h3>HTML</h3>
             <div class="codeBox">
-              &lt;p&gt;This &lt;span&gt;span&lt;/span&gt; is an inline element; its background has been colored to display both the beginning and end of the inline element's influence&lt;/p&gt;
+              &lt;div&gt;
+                &lt;h4&gt;HELLO!&lt;/h4&gt;
+                This is some text. This is some text. This is some text.<br>
+                This is some text. This is some text. This is some text.<br>
+                This is some text. This is some text. This is some text.<br>
+                This is some text. This is some text. This is some text.<br>
+              &lt;/div&gt;
             </div>
             <h3>CSS</h3>
             <div class="codeBox">
               <p>
-                span { background-color: #8ABB55; }
+                div { border: solid red;  max-width: 70ex; }<br>
+                h4  { float: left;  margin: 0; }
               </p>
             </div>
           </div>
@@ -364,7 +365,13 @@
           </p>
           <blockquote class="rendered">
             <p>
-              This <span class="greenBox">span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element's influence
+              <div class="floatExample">
+                <h4>HELLO!</h4>
+                This is some text. This is some text. This is some text.
+                This is some text. This is some text. This is some text.
+                This is some text. This is some text. This is some text.
+                This is some text. This is some text. This is some text.
+              </div>
             </p>
           </blockquote>
           <div class="modal-footer">
@@ -383,28 +390,47 @@
           </div>
           <div class="modal-body">
             <p>
-              HTML (Hypertext Markup Language) elements are usually "inline" elements or "block-level" elements. An inline element occupies only the space bounded by the tags that define the inline element. The following example demonstrates the inline element's influence:
+              Three main sources of style information form a cascade. They are:
             </p>
+            <ul>
+              <li>The browser's default styles for the markup language.</li>
+              <li>Styles specified by a user who is reading the document.</li>
+              <li>
+                The styles linked to the document by its author. These can be specified in three places:
+                <ol>
+                  <li>In an external file: this tutorial primarily discusses this method of defining styles.</li>
+                  <li>In a definition at the beginning of the document: use this method only for styles that are used only on that page.</li>
+                  <li>On a specific element in the body of the document: this is the least maintainable method, but can be used for testing.</li>
+                </ol>
+              </li>
+            </ul>
             <p>
-              Below is a code example of how to make an Inline Element:
+              The user's style modifies the browser's default style. The document author's style then modifies the style some more. In this tutorial, you are the author of your sample document, and you only work with author stylesheets.
             </p>
             <h3>HTML</h3>
             <div class="codeBox">
-              &lt;p&gt;This &lt;span&gt;span&lt;/span&gt; is an inline element; its background has been colored to display both the beginning and end of the inline element's influence&lt;/p&gt;
+              &lt;p&gt;<br>
+                &lt;strong&gt;C&lt;/strong&gt;ascading<br>
+                &lt;strong&gt;S&lt;/strong&gt;tylebr  <br>
+                &lt;strong&gt;S&lt;/strong&gt;heets <br>
+              &lt;/p&gt;
             </div>
             <h3>CSS</h3>
             <div class="codeBox">
               <p>
-                span { background-color: #8ABB55; }
+                p {color:blue; text-decoration:underline}<br>
+                strong {color:red}
               </p>
             </div>
           </div>
           <p>
             This is how above code would be rendered:
           </p>
-          <blockquote class="rendered">
+          <blockquote class="rendered cascadeExample">
             <p>
-              This <span class="greenBox">span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element's influence
+              <strong>C</strong>ascading
+              <strong>S</strong>tyle
+              <strong>S</strong>heets
             </p>
           </blockquote>
           <div class="modal-footer">

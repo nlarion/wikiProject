@@ -57,6 +57,30 @@ a {
   display: block;
 
 }
+
+.floatExample {
+  border: solid red;  max-width: 70ex;
+}
+
+.floatExample h4 {
+  float: left;  margin: 0;
+}
+
+.boxExample p {
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  border: 5px solid black;
+  margin: 20px 0 20px 0;
+}
+
+.cascadeExample p {
+  color:blue; text-decoration:underline
+}
+
+.cascadeExample strong {
+  color: red;
+}
+
 #mainMenu:hover {
   cursor: pointer;
   text-decoration: underline;
