@@ -65,5 +65,10 @@ $(document).ready(function() {
     }
   });
 
+  //start function form submit
+  $("#blanks form").submit(function(event) {
+
+    event.preventDefault();
+  });
 
 });
